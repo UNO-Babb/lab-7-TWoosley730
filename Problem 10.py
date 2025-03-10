@@ -2,16 +2,16 @@
 #Project problem 10
 
 from NumberTests import isPrime
-from NumberTests import fibonacciSequence
+
 
 def main():
+  limit = 2000000
   def sum_of_primes(limit):
-    """Return the summation of all prime numbers less than the given limit."""
-    total = 0
     for num in range(2, limit):
         if is_prime(num):
             total += num
     return total
+    print(total)
   
   
 
